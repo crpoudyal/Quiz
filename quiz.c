@@ -19,7 +19,7 @@ int main()
      printf("\n\t\t\t\t\t\t\t________________________________________");
      printf("\n\t\t\t\t\t\t\t\t   WELCOME ");
      printf("\n\t\t\t\t\t\t\t\t      to ");
-     printf("\n\t\t\t\t\t\t\t   THE GAME ");
+     printf("\n\t\t\t\t\t\t\t\t   THE GAME ");
      printf("\n\t\t\t\t\t\t\t________________________________________");
      printf("\n\t\t\t\t\t\t\t________________________________________");
      printf("\n\t\t\t\t\t\t\t   BECOME A MILLIONAIRE!!!!!!!!!!!    ") ;
@@ -95,17 +95,17 @@ int main()
      switch(r1)
 		{
 		case 1:
-		printf("\n\nWhich of the following is a Palindrome number?");
-		printf("\n\nA.42042\t\tB.101010\n\nC.23232\t\tD.01234");
-		if (toupper(getch())=='C')
+		printf("\n\nH2O is the chemical formula for what?");
+		printf("\n\nA. Water\t\tB.Iron\n\nC.Oxyzen\t\tD.Hydrogen");
+		if (toupper(getch())=='A')
 			{
-			    printf("\n\nCorrect!!!");count++;
+			    printf("\n\n Congrat You got it!!!");count++;
 			    getch();
 			    break;
 }
 		else
 		       {
-		           printf("\n\nWrong!!! The correct answer is C.23232");
+		           printf("\n\n Oh that's Wrong !!! The correct answer is A.Water");
 		           getch();
 		       break;
 		       }
@@ -114,7 +114,7 @@ int main()
 		printf("\n\n\nThe country with the highest environmental performance index is...");
 		printf("\n\nA.France\t\tB.Denmark\n\nC.Switzerland\t\tD.Finland");
 		if (toupper(getch())=='C')
-			{printf("\n\nCorrect!!!");count++;
+			{printf("\n\nCongrat You got it!!!");count++;
 			getch();
 			break;}
 		else
