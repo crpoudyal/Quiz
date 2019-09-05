@@ -57,22 +57,23 @@ int main()
 
     system("cls");
     printf("\n ------------------  Welcome %s to C Program Quiz Game --------------------------",playername);
-    printf("\n\n Here are some tips you might wanna know before playing:");
+    printf("\n\n Here are some tips you mightknow before playing:");
     printf("\n -------------------------------------------------------------------------");
-    printf("\n >> There are 2 rounds in this Quiz Game,WAR-MUP ROUND & CHALLANGE ROUND");
+    printf("\n >> There are 2 rounds in this Quiz Game,WARM-UP ROUND & CHALLANGE ROUND");
     printf("\n >> In warm-up round you will be asked a total of 3 questions to test your");
     printf("\n    general knowledge. You are eligible to play the game if you give atleast 2");
-    printf("\n    right answers, otherwise you can't proceed further to the Challenge Round.");
+    printf("\n    skill, otherwise you can't proceed further to the Challenge Round.");
     printf("\n >> Your game starts with CHALLANGE ROUND. In this round you will be asked a");
-    printf("\n    total of 10 questions. Each right answer will be awarded $100,000!");
-    printf("\n    By this way you can win upto ONE MILLION cash prize!!!!!..........");
+    printf("\n    total of 10 questions. Each right answer will be awarded RS.1000!");
     printf("\n >> You will be given 4 options and you have to press A, B ,C or D for the");
     printf("\n    right option.");
     printf("\n >> You will be asked questions continuously, till right answers are given");
     printf("\n >> No negative marking for wrong answers!");
     printf("\n\n\t!!!!!!!!!!!!! ALL THE BEST !!!!!!!!!!!!!");
+    
+    
     printf("\n\n\n Press Y  to start the game!\n");
-    printf("\n Press any other key to return to the main menu!");
+    printf("\n\n\n Press any other key to return to the main menu!");
     if (toupper(getch())=='Y')
 		{
 		    goto home;
@@ -114,37 +115,49 @@ int main()
 		printf("\n\n\nThe country with the highest environmental performance index is...");
 		printf("\n\nA.France\t\tB.Denmark\n\nC.Switzerland\t\tD.Finland");
 		if (toupper(getch())=='C')
-			{printf("\n\nCongrat You got it!!!");count++;
+			{
+			printf("\n\nCongrat You got it!!!");count++;
 			getch();
-			break;}
+			break;
+			}
 		else
-		       {printf("\n\nWrong!!! The correct answer is C.Switzerland");
+		       {
+			   printf("\n\nOh that's Wrong !!! The correct answer is C.Switzerland");
 		       getch();
-		       break;}
+		       break;
+			   }
 
         case 3:
 		printf("\n\n\nWhich animal laughs like human being?");
 		printf("\n\nA.Polar Bear\t\tB.Hyena\n\nC.Donkey\t\tD.Chimpanzee");
 		if (toupper(getch())=='B')
-			{printf("\n\nCorrect!!!");count++;
+			{
+			printf("\n\nCongrat You got it!!!");count++;
 			getch();
-			break;}
+			break;
+			}
 		else
-		       {printf("\n\nWrong!!! The correct answer is B.Hyena");
+		       {
+			   printf("\n\nOh that's Wrong !!! The correct answer is B.Hyena");
 		       getch();
-		       break;}
+		       break;
+			   }
 
         case 4:
 		printf("\n\n\nWho was awarded the youngest player award in Fifa World Cup 2006?");
 		printf("\n\nA.Wayne Rooney\t\tB.Lucas Podolski\n\nC.Lionel Messi\t\tD.Christiano Ronaldo");
 		if (toupper(getch())=='B')
-			{printf("\n\nCorrect!!!");count++;
+			{
+			printf("\n\nCongrat You got it!!!");count++;
 			getch();
-			 break;}
+			 break;
+			 }
 		else
-		       {printf("\n\nWrong!!! The correct answer is B.Lucas Podolski");
+		       {
+			   printf("\n\nOh that's Wrong !!! The correct answer is B.Lucas Podolski");
 		       getch();
-		       break;}
+		       break;
+			   }
 
         case 5:
         printf("\n\n\nWhich is the third highest mountain in the world?");
@@ -444,12 +457,11 @@ game:
 	if(score>0.00 && score<1000000)
 	{
 	   printf("\n\n\t\t**************** CONGRATULATION *****************");
-	     printf("\n\t You won $%.2f",score);goto go;}
+	     printf("\n\t You won Rs%.2f",score);goto go;}
 
 	 else if(score==1000000.00)
 	{
 	    printf("\n\n\n \t\t**************** CONGRATULATION ****************");
-	    printf("\n\t\t\t\t YOU ARE A MILLIONAIRE!!!!!!!!!");
 	    printf("\n\t\t You won $%.2f",score);
 	    printf("\t\t Thank You!!");
 	}
@@ -525,4 +537,6 @@ void edit_score(float score, char plnm[20])
 	    fclose(f);
 	    f=fopen("score.txt","w");
 	    fprintf(f,"%s\n%.2f",plnm,sc);
-	    fclose(f);}}
+	    fclose(f);
+		}
+		}
