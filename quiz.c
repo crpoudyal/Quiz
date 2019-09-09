@@ -509,7 +509,7 @@ void help()
 	{system("cls");
     printf("\n\n                              HELP");
     printf("\n -------------------------------------------------------------------------");
-    printf("\n ......................... C program Quiz Game...........");
+    printf("\n .........C program Quiz Game...........");
     printf("\n >> There are two rounds in the game, WARMUP ROUND & CHALLANGE ROUND");
     printf("\n >> In warmup round you will be asked a total of 3 questions to test your general");
     printf("\n    knowledge. You will be eligible to play the game if you can give atleast 2");
